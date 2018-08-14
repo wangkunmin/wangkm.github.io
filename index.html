@@ -1,88 +1,96 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)http://h5.hunlipic.com/web.php?id=MqUUWhc -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--<base href="http://h5.hunlipic.com/biaobai_shengrizhufu/">--><base href=".">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>HTML5七夕情人节送花动画 - 源码之家</title>
 
+<link rel='stylesheet' href='css/55c16d94000109f300000000.css' />
+<link rel='stylesheet' href='css/55c16dab0001286100000000.css' />
+<link rel='stylesheet' href='css/55c16dc00001fa1a00000000.css' />
+<link rel='stylesheet' href='css/55c16dda0001113100000000.css' />
 
-<title>生日祝福网页</title>
-<link href="1_files/style.css" type="text/css" rel="stylesheet">
-<script src="1_files/jquery.js.下载"></script>
-<script src="1_files/garden.js.下载"></script>
-<script src="1_files/functions.js.下载"></script>
+<script type="text/javascript" src="js/55ac9a860001a6c500000000.js"></script>
+<script type="text/javascript" src="js/55ac9ea30001ace700000000.js"></script>
+<script type="text/javascript" src="js/55c16c910001e21b00000000.js"></script>
 
 </head>
 
 <body>
-	<div id="mainDiv">	
-		<div id="content" style="width: 1150px; height: 625px; margin-top: 558.5px; margin-left: 10px;">
-			<div id="code" style="margin-top: 72.5px;">
-				<span class="comments">亲爱的宝贝：</span><br>
-				<span class="comments">在你生日到来之际，我将快乐的音符，作为礼物送给你，愿您拥有365个美丽的日子，衷心地祝福你，生日快乐！在此诚挚地献上我的三个祝愿：一愿你身体健康；二愿你幸福快乐；三愿你万事如意！</span><br><br>
-				<span class="comments">送你一个生日蛋糕，祝你生日快乐！第一层，体贴！第二层，关怀！第三层，浪漫！第四层，温馨！中间夹层，甜蜜！祝你天天都有一份好心情！</span><br>	
-<br><br>
-<span class="comments"><b class="bb">小明 ★ boby</b></span>
-_</div>
-			<div id="loveHeart">
-				<canvas id="garden" width="670" height="625"></canvas>
-				<div id="words" style="position: absolute; top: 753.5px; left: 560px;">
-					<div id="messages" style="display: block;">					
-				<img src="1_files/zsr.png">
-					</div>
-					<div id="loveu" style="display: block;">
-					<img src="1_files/sr.png">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="copyright">
-<center> 
-        <audio id="main_audio" autoplay="autoplay" preload="auto" loop="">
-            <source src="http://www.hunlipic.com/e/mp3/shengri.mp3" type="audio/mpeg">
-            <embed id="main_audio_ie8" hidden="true" autostart="true" height="0" width="0" loop="true" src="http://www.hunlipic.com/e/mp3/shengri.mp3" autoplay="autoplay">
-        </audio>
-        <a class="c-white fs-12 icon-play rotate" id="btn-play" href="javascript:void(0);"></a>
-    </center></div>
-	
-	
+<div id='content'>
+    <ul class='content-wrap'>
+        <!-- 第一副画面 -->
+        <li>
+            <!-- 背景图 -->
+            <div class="a_background">
+                <div class="a_background_top"></div>
+                <div class="a_background_middle"></div>
+                <div class="a_background_botton"></div>
+            </div>
+            <!-- 云 -->
+            <div class="cloudArea">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+            </div>
+            <!-- 太阳 -->
+            <div id="sun"></div>
+        </li>
+        <!-- 第二副画面 -->
+        <li>
+            <!-- 背景图 -->
+            <div class="b_background"></div>
+            <div class="b_background_preload"></div>
+            <!-- 商店 -->
+            <div class="shop">
+                <div class="door">
+                    <div class="door-left"></div>
+                    <div class="door-right"></div>
+                </div>
+                <!-- 灯 -->
+                <div class="lamp"></div>
+            </div>
+            <!-- 鸟 -->
+            <div class="bird"></div>
+        </li>
+        <!-- 第三副画面 -->
+        <li>
+            <!-- 背景图 -->
+            <div class="c_background">
+                <div class="c_background_top"></div>
+                <div class="c_background_middle"></div>
+                <div class="c_background_botton"></div>
+            </div>
+            <!-- 小女孩 -->
+            <div class="girl"></div>
+            <div class="bridge-bottom">
+                <div class="water">
+                    <div id="water1" class="water_1"></div>
+                    <div id="water2" class="water_2"></div>
+                    <div id="water3" class="water_3"></div>
+                    <div id="water4" class="water_4"></div>
+                </div>
+            </div>
+            <!-- 星星 -->
+            <ul class="stars">
+                <li class="stars1"></li>
+                <li class="stars2"></li>
+                <li class="stars3"></li>
+                <li class="stars4"></li>
+                <li class="stars5"></li>
+                <li class="stars6"></li>
+            </ul>
+            <!-- 慕课网logo图 -->
+            <div class="logo">祝天下有情人终成眷属</div>
+        </li>
+    </ul>
+    <!-- 雪花 -->
+    <div id="snowflake"></div>
+    <!-- 小男孩 -->
+    <div id="boy" class="charector"></div>
+</div>
 
-		</div>
-	
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setHours(8);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "您的浏览器已经过时!请使用非IE浏览器进行预览"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
+<div style="text-align:center;">
+<p>来源:<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</div>
 
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
-
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
-
-
-
-<div style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256580097'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256580097%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1256580097"><a href="http://www.cnzz.com/stat/website.php?web_id=1256580097" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="1_files/pic1.gif"></a></span><script src="1_files/z_stat.php" type="text/javascript"></script><script src="1_files/core.php" charset="utf-8" type="text/javascript"></script></div>
-
-					
-</body></html>
+</body>
+</html>
