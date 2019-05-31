@@ -135,3 +135,5 @@ window.onload = function () {
 
     }, 12000);   //gif图播放完毕所需时间为11.73s
 };
+
+
