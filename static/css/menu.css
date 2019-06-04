@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.tableList{
+    border: solid #ccc 2px;
+    min-width: 600px;
+    min-height: 300px;
+}
+
+.tableList thead{
+
+}
+
+.tableList thead tr{
+
+}
+
+.tableList tbody{
+
+}
+
+.tableList tbody tr{
+
+}
+
+.tableList tr{
+
+}
+
+.tableList td{
+
+}
